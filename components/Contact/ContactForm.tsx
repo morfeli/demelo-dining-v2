@@ -123,7 +123,7 @@ const ContactForm = () => {
 
   return (
     <Fragment>
-      <section>
+      <section id="Contact">
         <div>
           <h1>Contact Us</h1>
           <p>

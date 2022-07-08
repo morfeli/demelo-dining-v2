@@ -3,7 +3,10 @@ import HeroImg from "../../public/assets/pics/herochris.jpg";
 
 export const Hero: React.FC = ({}): JSX.Element => {
   return (
-    <section className="flex flex-col px-4 py-8 md:flex-row md:justify-evenly">
+    <section
+      id="Hero"
+      className="flex flex-col px-4 py-8 md:flex-row md:justify-evenly"
+    >
       <div className="flex flex-col items-baseline justify-between h-32 md:h-40 md:mt-10">
         <h1>Demelo Dining</h1>
         <p>Private Dining and Catering Hospitality Group</p>

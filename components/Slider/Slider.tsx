@@ -31,14 +31,14 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
           setIndex((current) =>
             current === gallery.length - 1 ? 0 : current + 1
           ),
-        3000
+        6000
       );
     }
 
     return () => clearInterval(interval);
   }, [index]);
   return (
-    <div>
+    <section id="Gallery" className="px-8">
       {" "}
       <div className="max-w-md m-auto overflow-hidden">
         <motion.div
@@ -58,16 +58,18 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
               />
             ))}
           {gallery &&
-            gallery.map((image, i) => (
-              <Image
-                key={i}
-                src={image.src}
-                alt="Demelo Dining"
-                width={500}
-                height={500}
-                className="inline-block mx-2 my-2 rounded-3xl"
-              />
-            ))}
+            gallery.map((image, i) => {
+              return (
+                <Image
+                  key={i}
+                  src={image.src}
+                  alt="Demelo Dining"
+                  width={500}
+                  height={500}
+                  className="inline-block mx-2 my-2 rounded-3xl"
+                />
+              );
+            })}
         </motion.div>
       </div>
       <div className="flex flex-wrap justify-center mt-4">
@@ -110,6 +112,6 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
             ></div>
           ))}
       </div>
-    </div>
+    </section>
   );
 };

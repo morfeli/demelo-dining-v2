@@ -29,17 +29,21 @@ const GetStartedCards = ({
   }, [controls, inView]);
 
   return (
-    <li id={id.toString()}>
-      <div>
-        <h1>{number}</h1>
+    <li
+      id={id.toString()}
+      className="flex flex-col items-center p-4 my-2 overflow-hidden bg-grayOne rounded-xl"
+    >
+      <div className="flex flex-col items-center w-10 h-10 rounded-full bg-lightGrayOne">
+        <h1 className="text-logoMediumPurple">{number}</h1>
       </div>
-      <h2>{title}</h2>
+      <h2 className="text-lg text-logoMediumPurple">{title}</h2>
       <motion.p
         ref={ref}
         variants={descriptionVariants}
         initial="hidden"
         animate={controls}
         transition={{ duration: 2 }}
+        className="text-slate-700"
       >
         {description}
       </motion.p>

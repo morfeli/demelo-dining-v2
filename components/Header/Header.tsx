@@ -19,7 +19,7 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth): JSX.Element => {
     return <></>;
   } else if (isMobile) {
     return (
-      <header className="fixed z-50 flex items-center justify-between w-full px-6 bg-lightGrayTwo">
+      <header className="z-50 flex items-center justify-between w-full px-6  bg-lightGrayTwo">
         <Logo />
         <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
         <MobileNav isOpen={isOpen} closeMenu={closeMenuHandler} />

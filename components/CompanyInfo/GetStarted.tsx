@@ -32,7 +32,7 @@ const DUMMY_STEPS = [
 
 const GetStarted = () => {
   return (
-    <div>
+    <div className="py-8">
       <h1>How it works</h1>
       <ul className="start-ul">
         {DUMMY_STEPS.map((item) => (
