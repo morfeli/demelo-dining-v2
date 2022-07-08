@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876" height="990">
+      <defs>
+        <linearGradient id="a" x1="0%" x2="100%" y1="50%" y2="50%">
+          <stop offset="0%" stopColor="#5D0202" stopOpacity="0"></stop>
+          <stop offset="100%" stopColor="#5D0202" stopOpacity="0.498"></stop>
+        </linearGradient>
+      </defs>
+      <g
+        fill="none"
+        fillRule="evenodd"
+        opacity="0.309"
+        transform="matrix(1 0 0 -1 0 990)"
+      >
+        <circle
+          cx="730"
+          cy="843.642"
+          r="146"
+          transform="scale(-1 1) rotate(-90 0 1573.642)"
+        ></circle>
+        <circle
+          cx="438"
+          cy="843.642"
+          r="146"
+          fill="url(#a)"
+          transform="matrix(-1 0 0 1 876 0)"
+        ></circle>
+        <circle
+          cx="146"
+          cy="843.642"
+          r="146"
+          fill="url(#a)"
+          transform="scale(-1 1) rotate(90 0 697.642)"
+        ></circle>
+        <circle
+          cx="730"
+          cy="146.358"
+          r="146"
+          transform="scale(-1 1) rotate(-90 0 876.358)"
+        ></circle>
+        <circle
+          cx="438"
+          cy="146.358"
+          r="146"
+          transform="matrix(-1 0 0 1 876 0)"
+        ></circle>
+      </g>
+    </svg>
