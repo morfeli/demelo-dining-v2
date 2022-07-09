@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import emailjs from "emailjs-com";
-import clsx from "classnames";
+import classNames from "classnames";
 import Modal from "../Modal/Modal";
 
 const isEmpty = (value: string) => value.trim() === "";
@@ -121,178 +121,131 @@ const ContactForm = () => {
     setShowModal(true);
   };
 
+  const inputDiv = classNames("my-4");
+  const inputStyle = classNames("w-60 p-2 rounded-md shadow-xl");
+
   return (
     <Fragment>
-      <section id="Contact">
-        <div>
-          <h1>Contact Us</h1>
-          <p>
+      <section
+        id="Contact"
+        className="flex flex-col p-8 leading-8 text-center bg-lightGrayTwo"
+      >
+        <div className="flex flex-col">
+          <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+            Contact Us
+          </h1>
+          <p className="pt-4">
             Ready to take it to the next level? Let’s talk about your upcoming
             event. Please leave us a short detailed message regarding your
             upcoming event. Include number of courses, guests, likes, dislikes,
             allergies and any special requests!
           </p>
         </div>
-        <form onSubmit={submitFormHandler}>
-          <div>
-            <div>
-              <label htmlFor="fname" />
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="First Name"
-                className={clsx({
-                  control:
-                    form.validity.firstName ||
-                    (!form.validity.firstName && form.touched.firstName),
-                  invalid: !form.validity.firstName && !form.touched.firstName,
-                })}
-                onChange={(e) =>
-                  setForm((current) => ({
-                    ...current,
-                    firstName: e.target.value,
-                    touched: {
-                      ...current.touched,
-                      firstName: true,
-                    },
-                  }))
-                }
-                value={form.firstName}
-              />
-              {!form.validity.firstName && (
-                <span
-                  className={
-                    !form.validity.firstName && form.touched.firstName
-                      ? "hidden"
-                      : "visible"
-                  }
-                >
-                  Please enter your first name.
-                </span>
-              )}
-            </div>
-            <div>
-              <label htmlFor="lname" />
-              <input
-                type="text"
-                id="lname"
-                name="lname"
-                placeholder="Last Name"
-                className={clsx({
-                  control:
-                    form.validity.lastName ||
-                    (!form.validity.lastName && form.touched.lastName),
-                  invalid: !form.validity.lastName && !form.touched.lastName,
-                })}
-                onChange={(e) =>
-                  setForm((current) => ({
-                    ...current,
-                    lastName: e.target.value,
-                    touched: {
-                      ...current.touched,
-                      lastName: true,
-                    },
-                  }))
-                }
-                value={form.lastName}
-              />
-              {!form.validity.lastName && (
-                <span
-                  className={
-                    !form.validity.lastName && form.touched.lastName
-                      ? "hidden"
-                      : "visible"
-                  }
-                >
-                  Please enter your last name.
-                </span>
-              )}
-            </div>
-            <div>
-              <label htmlFor="phone" />
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Phone Number"
-                className={clsx({
-                  control:
-                    form.validity.phone ||
-                    (!form.validity.phone && form.touched.phone),
-                  invalid: !form.validity.phone && !form.touched.phone,
-                })}
-                onChange={(e) =>
-                  setForm((current) => ({
-                    ...current,
-                    phone: e.target.value,
-                    touched: {
-                      ...current.touched,
-                      phone: true,
-                    },
-                  }))
-                }
-                value={form.phone}
-              />
-              {!form.validity.phone && (
-                <span
-                  className={
-                    !form.validity.lastName && form.touched.lastName
-                      ? "hidden"
-                      : "visible"
-                  }
-                >
-                  Please enter your phone number.
-                </span>
-              )}
-            </div>
-            <div>
-              <label htmlFor="email" />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email Address"
-                className={clsx({
-                  control:
-                    form.validity.email ||
-                    (!form.validity.email && form.touched.email),
-                  invalid: !form.validity.email && !form.touched.email,
-                })}
-                onChange={(e) =>
-                  setForm((current) => ({
-                    ...current,
-                    email: e.target.value,
-                    touched: {
-                      ...current.touched,
-                      email: true,
-                    },
-                  }))
-                }
-                value={form.email}
-              />
-              {!form.validity.email && (
-                <span
-                  className={
-                    !form.validity.lastName && form.touched.lastName
-                      ? "hidden"
-                      : "visible"
-                  }
-                >
-                  Please enter your email address.
-                </span>
-              )}
-            </div>
+        <form
+          onSubmit={submitFormHandler}
+          className="flex flex-col justify-between py-4 mt-4 bg-grayTwo rounded-2xl"
+        >
+          <div className={inputDiv}>
+            <label htmlFor="fname" />
+            <input
+              className={inputStyle}
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  firstName: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    firstName: true,
+                  },
+                }))
+              }
+              value={form.firstName}
+            />
+            {!form.validity.firstName && (
+              <span>Please enter your first name.</span>
+            )}
           </div>
-          <div>
+          <div className={inputDiv}>
+            <label htmlFor="lname" />
+            <input
+              className={inputStyle}
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  lastName: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    lastName: true,
+                  },
+                }))
+              }
+              value={form.lastName}
+            />
+            {!form.validity.lastName && (
+              <span>Please enter your last name.</span>
+            )}
+          </div>
+          <div className={inputDiv}>
+            <label htmlFor="phone" />
+            <input
+              className={inputStyle}
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  phone: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    phone: true,
+                  },
+                }))
+              }
+              value={form.phone}
+            />
+            {!form.validity.phone && (
+              <span>Please enter your phone number.</span>
+            )}
+          </div>
+          <div className={inputDiv}>
+            <label htmlFor="email" />
+            <input
+              className={inputStyle}
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  email: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    email: true,
+                  },
+                }))
+              }
+              value={form.email}
+            />
+            {!form.validity.email && (
+              <span>Please enter your email address.</span>
+            )}
+          </div>
+
+          <div className={inputDiv}>
             <label htmlFor="message"></label>
             <textarea
-              className={clsx({
-                control:
-                  form.validity.message ||
-                  (!form.validity.message && form.touched.message),
-                invalid: !form.validity.message && !form.touched.message,
-              })}
+              className={inputStyle}
               id="message"
               name="message"
               placeholder="Leave a message"
@@ -308,19 +261,14 @@ const ContactForm = () => {
               }
               value={form.message}
             />
-            {!form.validity.message && (
-              <span
-                className={
-                  !form.validity.message && form.touched.message
-                    ? "hidden"
-                    : "visible"
-                }
-              >
-                Please enter your message.
-              </span>
-            )}
+            {!form.validity.message && <span>Please enter your message.</span>}
           </div>
-          <button type="submit">SUBMIT</button>
+          <button
+            type="submit"
+            className="self-center px-8 py-1 bg-white shadow-xl rounded-2xl"
+          >
+            SUBMIT
+          </button>
         </form>
       </section>
       <Modal show={showModal} onClose={onCloseModalHandler}>

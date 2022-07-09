@@ -38,8 +38,7 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
     return () => clearInterval(interval);
   }, [index]);
   return (
-    <section id="Gallery" className="px-8">
-      {" "}
+    <section className="flex flex-col px-8">
       <div className="max-w-md m-auto overflow-hidden">
         <motion.div
           animate={{ translateX: `${-index * 100}%` }}
@@ -72,7 +71,7 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
             })}
         </motion.div>
       </div>
-      <div className="flex flex-wrap justify-center mt-4">
+      <div className="flex flex-wrap justify-center h-12 mt-4">
         {images &&
           images.map((dot, idx) => (
             <div

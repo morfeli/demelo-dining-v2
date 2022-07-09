@@ -9,7 +9,9 @@ export const About = () => {
       id="About"
       className="flex flex-col p-8 leading-8 text-center text-slate-700 bg-lightGrayTwo"
     >
-      <h1 className="self-center text-3xl">About</h1>
+      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+        About
+      </h1>
       <p className="py-4">
         Demelo Dining is a private dining company created by Chef Christopher
         Demelo. Chef Chris is back in Miami and ready to bring you the ultimate

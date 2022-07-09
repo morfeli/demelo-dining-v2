@@ -1,7 +1,9 @@
 export const Services = () => {
   return (
-    <section id="Services" className="flex flex-col px-8 py-8 text-center">
-      <h1 className="self-center text-3xl">Services</h1>
+    <section id="Services" className="flex flex-col p-8 leading-8 text-center">
+      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+        Services
+      </h1>
       <div className="flex flex-col">
         <h2 className="py-4 text-2xl">Catering</h2>
         <p className="py-2">
@@ -25,7 +27,7 @@ export const Services = () => {
             loop
             muted
             playsInline
-            className="object-cover h-96 w-85vw rounded-3xl"
+            className="object-cover shadow-2xl h-96 w-85vw rounded-3xl"
           />
         </div>
       </div>
@@ -47,7 +49,7 @@ export const Services = () => {
         </p>
         <div className="self-center my-4">
           <video
-            className="object-cover h-96 w-85vw rounded-3xl"
+            className="object-cover shadow-2xl h-96 w-85vw rounded-3xl"
             src="/assets/video/private-dining.mp4"
             autoPlay
             loop

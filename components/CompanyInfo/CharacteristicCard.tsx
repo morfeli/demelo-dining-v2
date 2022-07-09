@@ -19,7 +19,7 @@ const CharacteristicsCard = ({
       id={id}
       className="flex flex-col items-center p-4 my-4 overflow-hidden bg-grayOne rounded-xl"
     >
-      <h1 className="text-logoMediumPurple">{title}</h1>
+      <h1 className="text-xl text-logoMediumPurple">{title}</h1>
       <p>{description}</p>
       <motion.div
         animate={{ rotate: [0, 25, -25, 0] }}

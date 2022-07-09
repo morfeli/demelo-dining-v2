@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroImg from "../../public/assets/pics/herochris.jpg";
+import { Video } from "./Video";
 
 export const Hero: React.FC = ({}): JSX.Element => {
   return (
@@ -11,7 +12,7 @@ export const Hero: React.FC = ({}): JSX.Element => {
         <h1>Demelo Dining</h1>
         <p>Private Dining and Catering Hospitality Group</p>
         <p>Insert more text here</p>
-        <button className="px-2 py-1 font-bold bg-white rounded-full ">
+        <button className="px-2 py-1 font-bold bg-white rounded-full shadow-xl">
           Contact
         </button>
       </div>
@@ -26,6 +27,8 @@ export const Hero: React.FC = ({}): JSX.Element => {
           height={400}
         />
       </div>
+
+      <Video />
     </section>
   );
 };

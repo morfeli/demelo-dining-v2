@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import { Header } from "../components/Header/Header";
 import { Hero } from "../components/Hero/Hero";
-import { Video } from "../components/Hero/Video";
 import { About } from "../components/About/About";
 import { Services } from "../components/Services/Services";
 import { Gallery } from "../components/Gallery/Gallery";
@@ -33,12 +32,11 @@ const Home: NextPage = () => {
     <div className="bg-lightGrayOne text-slate-800">
       <Header innerWidth={innerWidth} isMobile={isMobile} />
       <Hero />
-      <Video />
       <About />
       <Services />
       <Gallery innerWidth={innerWidth} isMobile={isMobile} />
       <ContactForm />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

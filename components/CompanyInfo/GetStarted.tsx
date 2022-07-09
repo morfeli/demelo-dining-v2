@@ -17,7 +17,7 @@ const DUMMY_STEPS = [
   {
     id: 2,
     number: "3",
-    title: "Select how many courses",
+    title: "Select number of courses",
     description:
       "We recommend a three course meal for your first time experience. After that, you will want to experience Chefs seven course dining experience. Get ready to be blown away!",
   },
@@ -33,7 +33,6 @@ const DUMMY_STEPS = [
 const GetStarted = () => {
   return (
     <div className="py-8">
-      <h1>How it works</h1>
       <ul className="start-ul">
         {DUMMY_STEPS.map((item) => (
           <GetStartedCards

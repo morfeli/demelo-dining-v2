@@ -15,11 +15,12 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth): JSX.Element => {
     setIsOpen(false);
   };
 
-  if (innerWidth === 0) {
-    return <></>;
-  } else if (isMobile) {
+  if (isMobile) {
     return (
-      <header className="z-50 flex items-center justify-between w-full px-6  bg-lightGrayTwo">
+      <header
+        id="Home"
+        className="z-50 flex items-center justify-between w-full px-6 bg-lightGrayTwo"
+      >
         <Logo />
         <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
         <MobileNav isOpen={isOpen} closeMenu={closeMenuHandler} />
@@ -27,7 +28,10 @@ export const Header = ({ isMobile, innerWidth }: BrowserWidth): JSX.Element => {
     );
   } else {
     return (
-      <header className="flex items-center justify-between px-6 bg-lightGrayTwo">
+      <header
+        id="Home"
+        className="flex items-center justify-between px-6 bg-lightGrayTwo"
+      >
         <Logo />
         <Nav />
       </header>
