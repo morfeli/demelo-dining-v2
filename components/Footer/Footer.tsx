@@ -7,10 +7,10 @@ export const Footer = () => {
     <footer className="py-8">
       <ul className="flex flex-col items-center justify-between p-4 h-80 md:flex-row md:h-min">
         <Logo />
-        <NavItem content="About" footer />
-        <NavItem content="Services" footer />
-        <NavItem content="Gallery" footer />
-        <NavItem content="Contact" footer />
+        <NavItem content="About" />
+        <NavItem content="Services" />
+        <NavItem content="Gallery" />
+        <NavItem content="Contact" />
         <InstagramSVG />
       </ul>
     </footer>

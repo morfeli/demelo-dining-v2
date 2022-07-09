@@ -26,14 +26,11 @@ export const Hero: React.FC = ({}): JSX.Element => {
           </button>
         </div>
 
-        <div className="self-center">
+        <div className="self-center w-80 sm:w-96">
           <Image
-            priority={true}
+            priority
             src={HeroImg}
-            objectFit="contain"
             className="rounded-full"
-            width={300}
-            height={400}
             alt="Chef Demelo"
           />
         </div>
