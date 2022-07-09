@@ -1,7 +1,7 @@
 export const Services = () => {
   return (
     <section id="Services" className="flex flex-col p-8 leading-8 text-center">
-      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white font-Nautigal">
         Services
       </h1>
       <div className="flex flex-col">

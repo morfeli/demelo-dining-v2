@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Bai Jamjuree", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap");
+}
+
+@font-face {
+  font-family: "The Nautigal", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
+}
+
 html,
 body {
   padding: 0;

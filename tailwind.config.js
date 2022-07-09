@@ -34,6 +34,11 @@ module.exports = {
         "85vw": "85vw",
       },
     },
+
+    fontFamily: {
+      Bai: ["Bai Jamjuree", "sans-serif"],
+      Nautigal: ["Nautigal", "cursive"],
+    },
   },
   plugins: [],
 };

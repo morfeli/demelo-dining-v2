@@ -8,11 +8,12 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link rel="icon" href="/demelo-dining.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=The+Nautigal&display=swap"
             rel="stylesheet"
           />
-
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="https://demelodining.com" />
           <meta name="twitter:title" content="Demelo Dining" />
@@ -37,7 +38,7 @@ class MyDocument extends Document {
             content="https://www.demelodining.com/home-hero.jpg"
           />
         </Head>
-        <body>
+        <body className="font-Bai">
           <Main />
           <div id="modal-root"></div>
           <NextScript />

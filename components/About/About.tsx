@@ -9,7 +9,7 @@ export const About = () => {
       id="About"
       className="flex flex-col p-8 leading-8 text-center text-slate-700 bg-lightGrayTwo"
     >
-      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+      <h1 className="self-center px-8 py-4 text-3xl border-2 border-white font-Nautigal">
         About
       </h1>
       <p className="py-4">

@@ -4,7 +4,10 @@ import { Video } from "./Video";
 
 export const Hero: React.FC = ({}): JSX.Element => {
   return (
-    <section id="Hero" className="flex flex-col px-4 py-8 md:justify-evenly">
+    <section
+      id="Hero"
+      className="flex flex-col px-4 py-8 md:justify-evenly font-Bai"
+    >
       <div className="flex flex-col md:flex-row md:justify-around">
         <div className="flex flex-col items-baseline justify-between h-32 md:h-40 md:mt-10">
           <h1>Demelo Dining</h1>

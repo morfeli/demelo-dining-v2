@@ -130,7 +130,7 @@ const ContactForm = () => {
         className="flex flex-col p-8 leading-8 text-center bg-lightGrayTwo"
       >
         <div className="flex flex-col">
-          <h1 className="self-center px-8 py-4 text-3xl border-2 border-white">
+          <h1 className="self-center px-8 py-4 text-3xl border-2 border-white font-Nautigal">
             Contact Us
           </h1>
           <p className="pt-4">
