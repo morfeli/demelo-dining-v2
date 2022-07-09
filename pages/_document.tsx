@@ -38,7 +38,7 @@ class MyDocument extends Document {
             content="https://www.demelodining.com/home-hero.jpg"
           />
         </Head>
-        <body className="overflow-hidden font-Bai">
+        <body className="font-Bai">
           <Main />
           <div id="modal-root"></div>
           <NextScript />
