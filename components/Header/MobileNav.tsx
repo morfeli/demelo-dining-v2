@@ -1,4 +1,5 @@
 import React from "react";
+import { MouseEventHandler } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavItem } from "./NavItem";
 import { Logo } from "./Logo";
@@ -6,7 +7,7 @@ import classNames from "classnames";
 
 type MobileNavProps = {
   isOpen: boolean;
-  closeMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  closeMenu: MouseEventHandler<HTMLLIElement> | undefined;
 };
 
 export const MobileNav = (props: MobileNavProps) => {
@@ -39,10 +40,10 @@ export const MobileNav = (props: MobileNavProps) => {
           exit={{ opacity: 0, x: "-100%" }}
         >
           <ul className="flex flex-col items-center rounded-lg justify-evenly h-96 bg-slate-300">
-            <NavItem content="About" />
-            <NavItem content="Services" />
-            <NavItem content="Gallery" />
-            <NavItem content="Contact" />
+            <NavItem content="About" closeMenu={props.closeMenu} />
+            <NavItem content="Services" closeMenu={props.closeMenu} />
+            <NavItem content="Gallery" closeMenu={props.closeMenu} />
+            <NavItem content="Contact" closeMenu={props.closeMenu} />
             <Logo />
           </ul>
         </motion.nav>

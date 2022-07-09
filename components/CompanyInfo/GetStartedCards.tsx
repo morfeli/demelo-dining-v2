@@ -31,9 +31,9 @@ const GetStartedCards = ({
   return (
     <li
       id={id.toString()}
-      className="flex flex-col items-center p-4 my-2 overflow-hidden bg-grayOne rounded-xl"
+      className="flex flex-col items-center justify-around p-4 my-2 overflow-hidden bg-grayOne rounded-xl"
     >
-      <div className="flex flex-col items-center w-10 h-10 rounded-full bg-lightGrayOne">
+      <div className="flex flex-col items-center justify-center w-10 h-10 rounded-full bg-lightGrayOne">
         <h1 className="text-logoMediumPurple">{number}</h1>
       </div>
       <h2 className="text-xl text-logoMediumPurple">{title}</h2>
