@@ -12,7 +12,8 @@ const DUMMY_STEPS = [
     id: 1,
     number: "2",
     title: "Select number of guests",
-    description: "Chef needs to prepare enough food for everyone to enjoy.",
+    description:
+      "Chef needs to prepare enough food for everyone to enjoy. Let us know how many guests will attend your event so we can properly prepare your experience.",
   },
   {
     id: 2,
@@ -33,7 +34,7 @@ const DUMMY_STEPS = [
 const GetStarted = () => {
   return (
     <div className="py-8">
-      <ul className="start-ul">
+      <ul className="md:grid md:grid-cols-2 md:gap-8">
         {DUMMY_STEPS.map((item) => (
           <GetStartedCards
             id={item.id}

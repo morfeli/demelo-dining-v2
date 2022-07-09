@@ -29,17 +29,19 @@ const DUMMY_CHARACTERISTICS = [
 
 const Characteristics = () => {
   return (
-    <ul>
-      {DUMMY_CHARACTERISTICS.map((item) => (
-        <CharacteristicsCard
-          key={item.id}
-          id={item.id}
-          src={item.src}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </ul>
+    <div>
+      <ul className="md:grid md:grid-cols-2 md:gap-8">
+        {DUMMY_CHARACTERISTICS.map((item) => (
+          <CharacteristicsCard
+            key={item.id}
+            id={item.id}
+            src={item.src}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

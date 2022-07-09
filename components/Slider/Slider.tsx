@@ -38,7 +38,7 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
     return () => clearInterval(interval);
   }, [index, gallery, images]);
   return (
-    <section className="flex flex-col px-8">
+    <section className="flex flex-col px-8 pt-4">
       <div className="max-w-md m-auto overflow-hidden">
         <motion.div
           animate={{ translateX: `${-index * 100}%` }}

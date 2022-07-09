@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <section
       id="About"
-      className="flex flex-col p-8 leading-8 text-center text-slate-700 bg-lightGrayTwo"
+      className="flex flex-col p-8 leading-8 text-center text-slate-700 bg-lightGrayTwo md:px-18 md:text-lg"
     >
       <h1 className="self-center px-8 py-4 text-3xl border-2 border-white font-Nautigal">
         About

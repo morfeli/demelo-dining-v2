@@ -17,7 +17,7 @@ const CharacteristicsCard = ({
   return (
     <li
       id={id}
-      className="flex flex-col items-center p-4 my-4 overflow-hidden bg-grayOne rounded-xl"
+      className="flex flex-col items-center justify-around p-4 my-4 overflow-hidden bg-grayOne rounded-xl md:last:col-span-2"
     >
       <h1 className="text-xl text-logoMediumPurple">{title}</h1>
       <p>{description}</p>
