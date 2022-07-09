@@ -21,7 +21,7 @@ export const Hero: React.FC = ({}): JSX.Element => {
           <p className="py-4 md:text-lg">
             Redefining the private dining experience
           </p>
-          <button className="px-4 py-2 font-bold bg-white rounded-full shadow-xl cursor-pointer md:px-8 md:py-4">
+          <button className="px-4 py-2 font-bold bg-white rounded-full shadow-xl cursor-pointer md:px-8 md:h-20">
             Contact
           </button>
         </div>
