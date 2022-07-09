@@ -9,11 +9,13 @@ export const Hero: React.FC = ({}): JSX.Element => {
       className="flex flex-col px-4 py-8 md:justify-evenly font-Bai"
     >
       <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="flex flex-col items-baseline justify-between h-32 md:h-40 md:mt-10">
-          <h1>Demelo Dining</h1>
-          <p>Private Dining and Catering Hospitality Group</p>
-          <p>Insert more text here</p>
-          <button className="px-2 py-1 font-bold bg-white rounded-full shadow-xl">
+        <div className="flex flex-col items-baseline justify-between md:h-40 md:mt-10">
+          <h1 className="text-2xl">Demelo Dining</h1>
+          <p className="pt-4 text-md">
+            Private Dining and Catering Hospitality Group
+          </p>
+          <p className="py-4">Redefining the private dining experience</p>
+          <button className="px-4 py-2 font-bold bg-white rounded-full shadow-xl cursor-pointer">
             Contact
           </button>
         </div>
