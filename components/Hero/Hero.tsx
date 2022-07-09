@@ -25,6 +25,7 @@ export const Hero: React.FC = ({}): JSX.Element => {
           className="rounded-full"
           width={300}
           height={400}
+          alt="Chef Demelo"
         />
       </div>
 

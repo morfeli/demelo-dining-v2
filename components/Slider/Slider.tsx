@@ -36,7 +36,7 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
     }
 
     return () => clearInterval(interval);
-  }, [index]);
+  }, [index, gallery, images]);
   return (
     <section className="flex flex-col px-8">
       <div className="max-w-md m-auto overflow-hidden">

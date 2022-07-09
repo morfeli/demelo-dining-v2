@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import classNames from "classnames";
-import Modal from "../Modal/Modal";
 
 const isEmpty = (value: string) => value.trim() === "";
 const isTenChars = (value: string) => value.trim().length === 10;
@@ -271,10 +270,10 @@ const ContactForm = () => {
           </button>
         </form>
       </section>
-      <Modal show={showModal} onClose={onCloseModalHandler}>
+      {/* <Modal show={showModal} onClose={onCloseModalHandler}>
         Thank you! We have receieved your message. We will be in contact within
         24 hours!
-      </Modal>
+      </Modal> */}
     </Fragment>
   );
 };
