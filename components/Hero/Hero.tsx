@@ -1,10 +1,14 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import HeroImg from "../../public/assets/pics/herochris.jpg";
 import { Video } from "./Video";
 
 export const Hero: React.FC = ({}): JSX.Element => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1 }}
       id="Hero"
       className="flex flex-col px-4 py-8 md:justify-evenly font-Bai"
     >
@@ -34,6 +38,6 @@ export const Hero: React.FC = ({}): JSX.Element => {
       </div>
 
       <Video />
-    </section>
+    </motion.section>
   );
 };
