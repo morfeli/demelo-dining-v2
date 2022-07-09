@@ -37,11 +37,12 @@ export const SliderDesktop = ({ gallery }: SliderDesktopProps) => {
           className="flex items-center w-auto pb-2 mx-8 overflow-hidden scroll-smooth whitespace-nowrap"
         >
           {gallery.map((item, i) => (
-            <div className="flex flex-col items-center">
+            <div key={i} className="flex flex-col items-center">
               <img
                 // key={i}
                 // src={item.src}
                 className="m-2 bg-contain cursor-pointer w-60 h-60 hover:bg-black"
+                alt="Demelo Dining's sample dishes"
               />
             </div>
           ))}
