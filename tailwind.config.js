@@ -15,6 +15,7 @@ module.exports = {
         lightGrayThree: "#cccccc",
         grayOne: "#bbbbbb",
         grayTwo: "#aaaaaa",
+        overLay: "rgba(0, 0, 0, 0.5)",
       },
       colors: {
         lightGrayOne: "#eeeeee",
