@@ -29,12 +29,11 @@ export const SwiperFN = ({ gallery }: Props) => {
       >
         {gallery.map((item, i) => {
           return (
-            <SwiperSlide className="pb-20" key={i}>
+            <SwiperSlide key={i}>
               <Image
                 src={item.src}
-                layout="fixed"
                 width={600}
-                height={600}
+                height={500}
                 className="shadow-2xl rounded-3xl"
                 alt="Chef Demelo sample dishes"
               />
