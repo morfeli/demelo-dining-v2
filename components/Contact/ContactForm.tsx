@@ -127,13 +127,13 @@ const ContactForm = () => {
     <Fragment>
       <section
         id="Contact"
-        className="flex flex-col p-8 leading-8 text-center bg-lightGrayTwo"
+        className="flex flex-col p-8 leading-8 text-center bg-lightGrayTwo md:px-18 lg:flex-row lg:text-xl lg:leading-10 "
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-50vw">
           <h1 className="self-center px-8 py-4 text-3xl border-2 border-white font-Nautigal">
             Contact Us
           </h1>
-          <p className="pt-4">
+          <p className="pt-4 lg:px-10">
             Ready to take it to the next level? Let’s talk about your upcoming
             event. Please leave us a short detailed message regarding your
             upcoming event. Include number of courses, guests, likes, dislikes,
