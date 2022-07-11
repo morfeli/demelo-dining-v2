@@ -30,6 +30,7 @@ module.exports = {
         highlightPurple: "#5c20df",
       },
       width: {
+        "30vw": "30vw",
         "70vw": "70vw",
         "85vw": "85vw",
         "90vw": "90vw",

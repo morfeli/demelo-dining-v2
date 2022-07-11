@@ -30,7 +30,7 @@ export const Hero: React.FC = ({}): JSX.Element => {
           </Link>
         </div>
 
-        <div className="self-center w-80 sm:w-96">
+        <div className="self-center w-80 sm:w-96 lg:w-30vw">
           <Image
             priority
             src={HeroImg}
