@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import HeroImg from "../../public/assets/pics/herochris.jpg";
 import { Video } from "./Video";
 
@@ -21,9 +23,11 @@ export const Hero: React.FC = ({}): JSX.Element => {
           <p className="py-4 md:text-lg">
             Redefining the private dining experience
           </p>
-          <button className="px-4 py-2 font-bold bg-white rounded-full shadow-xl cursor-pointer md:px-8 md:py-4">
-            Contact
-          </button>
+          <Link href="#Contact">
+            <button className="px-4 py-2 font-bold bg-white rounded-full shadow-xl cursor-pointer md:px-8 md:py-4">
+              Contact
+            </button>
+          </Link>
         </div>
 
         <div className="self-center w-80 sm:w-96">

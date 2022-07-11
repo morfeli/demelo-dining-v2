@@ -142,7 +142,7 @@ const ContactForm = () => {
         </div>
         <form
           onSubmit={submitFormHandler}
-          className="flex flex-col justify-between py-4 mt-4 bg-grayTwo rounded-2xl"
+          className="flex flex-col justify-between py-4 mt-4 bg-grayTwo rounded-2xl md:w-80 md:mx-auto"
         >
           <div className={inputDiv}>
             <label htmlFor="fname" />

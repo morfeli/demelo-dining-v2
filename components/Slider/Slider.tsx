@@ -12,6 +12,7 @@ type AboutSliderProps = {
 
 export const Slider = ({ images, gallery }: AboutSliderProps) => {
   const [index, setIndex] = useState(0);
+  const [title, setTitle] = useState<string>();
 
   useEffect(() => {
     let interval: any;
@@ -37,6 +38,7 @@ export const Slider = ({ images, gallery }: AboutSliderProps) => {
 
     return () => clearInterval(interval);
   }, [index, gallery, images]);
+
   return (
     <section className="flex flex-col px-8 pt-4">
       <div className="max-w-md m-auto overflow-hidden">

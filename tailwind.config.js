@@ -32,7 +32,9 @@ module.exports = {
       width: {
         "70vw": "70vw",
         "85vw": "85vw",
+        "90vw": "90vw",
         "50vw": "50vw",
+        "600px": "600px",
       },
     },
 

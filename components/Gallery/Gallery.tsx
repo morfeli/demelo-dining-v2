@@ -1,9 +1,9 @@
 import { BrowserWidth } from "../../pages";
-import { Slider } from "../Slider/Slider";
 import { StaticImageData } from "next/image";
 
 import GalleryImages from "./GalleryImages";
-// import { SliderDesktop } from "../Slider/SliderDesktop";
+import { Slider } from "../Slider/Slider";
+import { SwiperFN } from "../Slider/Swiper";
 
 export interface ISlider {
   src: StaticImageData;
@@ -21,7 +21,6 @@ export const Gallery = ({ isMobile, innerWidth }: BrowserWidth) => {
       </section>
     );
   } else {
-    // return <SliderDesktop gallery={GalleryImages} />;
-    return <h1>hello</h1>;
+    return <SwiperFN gallery={GalleryImages} />;
   }
 };

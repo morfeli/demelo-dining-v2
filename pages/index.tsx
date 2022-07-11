@@ -7,6 +7,7 @@ import { Services } from "../components/Services/Services";
 import { Gallery } from "../components/Gallery/Gallery";
 import ContactForm from "../components/Contact/ContactForm";
 import { Footer } from "../components/Footer/Footer";
+import { SwiperFN } from "../components/Slider/Swiper";
 
 export interface BrowserWidth {
   innerWidth: number;
