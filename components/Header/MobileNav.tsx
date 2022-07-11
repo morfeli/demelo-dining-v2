@@ -14,9 +14,7 @@ export const MobileNav = (props: MobileNavProps) => {
   let mobileMenuClass;
 
   if (props.isOpen) {
-    mobileMenuClass = classNames(
-      "block w-full px-2 absolute top-0 left-0 z-40"
-    );
+    mobileMenuClass = classNames("block w-full px-16 absolute inset-0 z-40");
   } else {
     mobileMenuClass = classNames("hidden absolute ");
   }
@@ -36,7 +34,7 @@ export const MobileNav = (props: MobileNavProps) => {
           variants={navBarVariants}
           initial="closed"
           animate="open"
-          transition={{ type: "spring", stiffness: 100 }}
+          transition={{ type: "spring", stiffness: 50 }}
           exit={{ opacity: 0, x: "-100%" }}
         >
           <ul className="flex flex-col items-center rounded-lg justify-evenly h-96 bg-slate-300">
