@@ -13,9 +13,10 @@ import { RightArrow } from "./RightArrow";
 
 type Props = {
   gallery: ISlider[];
+  innerWidth: number;
 };
 
-export const SwiperFN = ({ gallery }: Props) => {
+export const SwiperFN = ({ gallery, innerWidth }: Props) => {
   return (
     <div className="flex items-center justify-around">
       <Swiper
@@ -23,20 +24,20 @@ export const SwiperFN = ({ gallery }: Props) => {
         grabCursor={true}
         pagination={true}
         modules={[EffectCube, Pagination]}
-        className="mx-auto w-600px"
+        className="mx-auto w-500px"
       >
         {gallery.map((item, i) => {
           return (
             <SwiperSlide key={i}>
               <Image
                 src={item.src}
-                width={600}
-                height={500}
+                width={500}
+                height={400}
                 className="shadow-2xl rounded-3xl"
                 alt="Chef Demelo sample dishes"
               />
-              <div className="p-8 mt-4 mb-20 text-white rounded-md bg-grayTwo">
-                <h1 className="text-3xl text-center">{item.title}</h1>
+              <div className="p-4 mb-8 text-white rounded-md bg-grayTwo">
+                <h1 className="text-xl text-center">{item.title}</h1>
               </div>
             </SwiperSlide>
           );

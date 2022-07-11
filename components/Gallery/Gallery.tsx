@@ -22,11 +22,11 @@ export const Gallery = ({ isMobile, innerWidth }: BrowserWidth) => {
     );
   } else {
     return (
-      <section id="Gallery" className="flex flex-col">
+      <section id="Gallery" className="flex flex-col h-3/4">
         <h1 className="self-center px-8 py-4 my-4 text-3xl border-2 border-white font-Nautigal">
           Gallery
         </h1>
-        <SwiperFN gallery={GalleryImages} />;
+        <SwiperFN gallery={GalleryImages} innerWidth={innerWidth} />;
       </section>
     );
   }
