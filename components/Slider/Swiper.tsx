@@ -16,8 +16,6 @@ type Props = {
 };
 
 export const SwiperFN = ({ gallery }: Props) => {
-  const swipe = useSwiper();
-
   return (
     <div className="flex items-center justify-around">
       <Swiper
@@ -37,7 +35,7 @@ export const SwiperFN = ({ gallery }: Props) => {
                 className="shadow-2xl rounded-3xl"
                 alt="Chef Demelo sample dishes"
               />
-              <div className="p-8 mt-4 text-white rounded-md bg-grayTwo">
+              <div className="p-8 mt-4 mb-10 text-white rounded-md bg-grayTwo">
                 <h1 className="text-3xl text-center">{item.title}</h1>
               </div>
             </SwiperSlide>
