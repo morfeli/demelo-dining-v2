@@ -122,7 +122,7 @@ const ContactForm = () => {
     setShowModal(true);
   };
 
-  const inputDiv = classNames("my-4");
+  const inputDiv = classNames("my-4 flex flex-col items-center");
   const inputStyle = classNames("w-60 p-2 rounded-md shadow-xl");
 
   return (

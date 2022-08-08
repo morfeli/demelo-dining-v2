@@ -12,7 +12,6 @@ type AboutSliderProps = {
 
 export const Slider = ({ images, gallery }: AboutSliderProps) => {
   const [index, setIndex] = useState(0);
-  const [title, setTitle] = useState<string>();
 
   useEffect(() => {
     let interval: any;
